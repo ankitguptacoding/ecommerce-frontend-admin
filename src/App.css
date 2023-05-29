@@ -1,0 +1,570 @@
+
+:root {
+  --yellow: linear-gradient(180deg, #f8d49a -146.42%, #fad79d -46.42%);
+  --orange: #fca61f;
+  --black: #242d49;
+  --gray: #788097;
+  --purple: linear-gradient(180deg, #bb67ff 0%, #c484f3 100%);
+  --pink: #ff919d;
+  --glass: rgba(255, 255, 255, 0.54);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --samboxShodow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --activeItem: #f799a354;
+}
+.dashboard {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(
+    106.37deg,
+    #ffe1bc 29.63%,
+    #ffcfd1 51.55%,
+    #f3c6f1 90.85%
+  );
+  height: 86vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AppGlass {
+  display: grid;
+  height: 97%;
+  width: 97%;
+  border-radius: 2rem;
+  background-color: var(--glass);
+  margin-bottom: 6px;
+  overflow: hidden;
+  grid-template-columns: 11rem auto 20rem;
+}
+
+.nav-ul li {
+
+  display: inline-block;
+  padding: 10px;
+  
+}
+.nav-ul li a{
+
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+}
+.nav-ul {
+  padding: 5px;
+  margin: 0;
+  background-color: skyblue;
+  height: 53px;
+}
+.footer {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  background-color: skyblue;
+  margin: 0px;
+  padding: 4px;
+  position: fixed;
+  bottom: 0;
+}
+.inputBox {
+  display:block;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 7px;
+  width: 280px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.icon{
+
+  background-color: skyblue;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 38px;
+  box-sizing: content-box;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-left: 17px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+img{
+  width: 100%;
+}
+input:focus-visible{
+  outline: 0px solid red !important;
+}
+.heading{
+ color: skyblue;
+ margin-left: 20px;
+ margin-top: 10px;
+ text-align: center
+}
+
+ .product{
+  margin-left: 30%;
+ 
+}
+.register{
+  width: 450px;
+  background-color: #282c34;
+  margin:auto;
+  margin-top: 130px;
+  padding: 10px;
+  border-radius: 10px;
+  padding-left: 44px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+
+.input_group{
+  display: flex;
+}
+
+.right_login h6{
+  color: white;
+}
+ .permission{
+  margin-left: 30%;
+  margin-top: 100px;
+
+}
+.left_login{
+  background-color: #aceafb;
+  width: 250px;
+  
+}
+.right_login{
+  width: 350px;
+  background-color: #082831;
+}
+.breadcrumb {
+    position: absolute;
+    left: 201px;
+    margin: 10px;
+}
+.login{
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 130px
+  
+}
+.logout{
+    background-color: lightsteelblue;
+    width: 437px;
+    padding: 10px;
+    margin-left: 473px;
+    margin-top: 210px;
+}
+.appButton {
+  margin-left: 43px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100px;
+  background-color: skyblue;
+  border: 1px solid;
+  cursor: pointer;
+  border-radius: 10px;
+  border:none;
+}
+.appButton span ,.signupbtn span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.rightsidemenu {
+  position: absolute;
+  right: 0;
+  background: skyblue;
+  margin: 0px;
+  border-radius: 0px 0px 20px 20px;
+}
+.appButton span:after , .signupbtn span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.appButton:hover span ,.signupbtn:hover span{
+  padding-right: 25px;
+}
+
+.appButton:hover span:after ,.signupbtn:hover span:after{
+  opacity: 1;
+  right: 0;
+}
+.login_footer{
+  display: flex;
+
+}
+.not_member{
+  margin-left: 19px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  height: 0px !important;
+}
+.not_member:hover { 
+  text-decoration: none;
+  color: white;
+  border:none;
+ }
+.signup_new{
+  color: skyblue;
+}
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+
+
+@media screen and (max-width: 600px) {
+  .login{
+    display: flex;
+    justify-content: center;
+    width: 370px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 100px;
+  }
+  .left_login{
+    background-color: #aceafb;
+    width: 0px;
+    
+  }
+  .right_login{
+    width: 370px;
+    background-color: #082831;
+  }
+  .appButton {
+  
+    background-color: skyblue;
+    border-radius: 10px;
+    margin-left: 70px !important;
+    margin-bottom: 20px;
+  
+  }
+  .register{
+    width: 290px;
+    background-color: #082831;
+    margin:auto;
+    margin-top: 115px !important;
+    padding: 10px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+  }
+  .signupbtn{
+    background-color: skyblue !important;
+    width: 91% !important;
+    border-radius: 10px;
+    border: none;
+    margin-left: 15px;
+    height: 40px;
+  
+  }
+  
+}
+@media screen and (max-width: 992px) {
+  .login{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  .left_login{
+    width: 0px;
+    
+  }
+  .right_login{
+    width: 400px;
+    background-color: #082831;
+  }
+  .inputBox {
+    display:block;
+    width: 350px;
+    border: none;
+    margin-right:15px;
+    
+  }
+  .appButton {
+  
+    background-color: skyblue;
+    border-radius: 10px;
+    margin-left: 100px !important;
+    margin-bottom: 20px;
+  
+  }
+  .register{
+    width: 400px ;
+    background-color: #082831;
+    margin:auto;
+    margin-top: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px !important;
+  }
+  .signupbtn{
+    width: 91% !important;
+    
+  }
+  
+}
+.modal-backdrop.fade {
+  opacity: 0.6 !important;
+}
+
+.multiSelectContainer {
+  position: relative;
+  text-align: left;
+  width: 30% !important;
+}
+
+
+.nav-right {
+  text-align: right;
+  padding: 10px;
+}
+
+.logo {
+  width: 36px;
+  float: left;
+  border-radius: 50%;
+  margin-top: 7px;
+  margin-left: 18px;
+  position:sticky;
+}
+.company_name{
+  width: 43px;
+  float:left;
+  margin-top: 10px;
+  margin-left: 6px;
+}
+.sidebar_icon {
+  float: left;
+  margin-top: 18px;
+  margin-left: 64px;
+  color: white;
+  width: 17px;
+}
+.company_name>span>span{
+  color: white;
+}
+.invalid-input {
+  margin-top: -20px;
+  margin-left: 25px;
+  color: red;
+  display: block;
+
+}
+.product-list {
+  margin: 59px 0px;
+  text-align: center;
+}
+
+.product-table  {
+  margin: auto;
+  margin-top: inherit;
+ 
+ 
+}
+table {
+  border-collapse: inherit;
+  border-spacing: 8px;
+  width: 74%;
+  margin-left: 176px;
+  margin-top: 58px;
+
+}
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+.vh-85 {
+  height: 85vh!important;
+}
+.profile{
+  padding-top: 57px;
+  text-align: center;
+}
+
+
+tr:nth-child(even){background-color: #f2f2f2}
+ .no-records {
+
+  text-align: center;
+ }
+.animated {
+  max-height: 50px;
+  margin-left: 277px;
+  margin-top: 36px;
+  margin-right: 277px;
+}
+.card_header {
+  text-align: center;
+}
+.card_footer{
+  text-align: right;
+}
+.btn{
+  background-color: skyblue !important;
+  color: black !important;
+}
+ .search {
+  width: 499px;
+  height: 35px;
+  border: 2px solid skyblue;
+  border-radius: 20px;
+  padding-left: 30px;
+}
+
+.modal-backdrop
+{
+    opacity:0.0 !important;
+}
+ 
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.exist_user{
+  margin: 10px 10px 10px 30px;
+
+}
+
+.signup{
+  display: flex;
+}
+.signupbtn{
+  background-color: skyblue;
+  width: 78%;
+  border-radius: 10px;
+  border: none;
+  margin-left: 15px;
+  height: 40px;
+  margin-top: 10px;
+}
+.register h5 {
+  color: skyblue;
+  margin-left: -20px;
+  margin-top: 10px;
+  text-align: center
+ }
+ .user_setting a{
+  align-items: center;
+  color: black ;
+  margin-right: 14px;
+  text-decoration: none ;
+  
+    
+ }
+ .user_setting i{
+  padding-right: 7px;
+  z-index: 9;
+  
+ }
+ @media screen and (max-width: 400px) {
+  
+.login{
+    display: flex !important;
+    justify-content: center !important;
+    width: 290px !important;
+    margin: auto !important;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 118px !important;
+    
+}
+  
+.right_login{
+    width: 290px;
+    background-color: #082831;
+}
+  
+.inputBox {
+  display:block;
+  width: 200px !important;
+  border: none;
+  margin-right:15px !important;
+  
+}
+.icon{
+  background-color: skyblue;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 45px;
+  box-sizing: content-box;
+  padding-left: 6px !important;
+  padding-right: 6px;
+  margin-left: 28px !important;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.register{
+  width: 290px;
+  background-color: #082831;
+  margin:auto;
+  margin-top: 75px !important;
+  padding: 10px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+.signupbtn{
+  background-color: skyblue !important;
+  width: 85% !important;
+  border-radius: 10px;
+  border: none;
+  margin-left: 25px !important;
+  height: 40px;
+
+}
+.appButton {
+  margin-left: 24px !important;
+  width: 60px;
+}
+.not_member{
+  margin-left: 26px;
+  margin-right: -20px;
+}
+.exist_user{
+  margin: 10px 10px 10px 10px;
+
+}
+
+}
