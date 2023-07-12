@@ -30,7 +30,7 @@ const Nav = () => {
                 </span></h4>
 
                 {
-                    userDetails.permission != undefined ? <Link className='sidebar_link' ><FaBars className='sidebar_icon' onClick={() => { setSidebar(!sidebar) }} /></Link> : null
+                   userDetails && userDetails.permission != undefined ? <Link className='sidebar_link' ><FaBars className='sidebar_icon' onClick={() => { setSidebar(!sidebar) }} /></Link> : null
 
                 }
 
